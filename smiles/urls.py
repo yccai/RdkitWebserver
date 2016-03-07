@@ -6,5 +6,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     # ex: /polls/5/validate/
     url(r'^([^J][A-Za-z0-9@+\-\[\]\(\)\\=#$]+)/validate$', views.validate, name='validate'),
-    url(r'^([^J][A-Za-z0-9@+\-\[\]\(\)\\=#$]+)/draw$', views.draw, name='draw'),
+    url(r'^([^J][A-Za-z0-9@+\-\[\]\(\)\\=#$]+)/png$', views.png, name='png'),
 ]

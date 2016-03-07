@@ -28,7 +28,7 @@ def validate(request, smiles):
 
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
 
-def draw(request, smiles):
+def png(request, smiles):
 	mol = Chem.MolFromSmiles(str(smiles))
 	image = Draw.MolToImage(mol)
 	response = HttpResponse(mimetype="image/png")
